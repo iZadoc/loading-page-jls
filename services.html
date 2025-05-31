@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabricio Ferreira Schultz">
+    <title>JLS Transporte e Guincho</title>
+    <!-- Implementar -->
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <!-- Bootstrap CSS with Replit theme -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" defer></script>
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-overlay">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregando...</span>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="./index.html">
+                <i class="fas fa-truck me-2"></i>JLS Transporte e Guincho
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="fas fa-home me-1"></i>Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            <i class="fas fa-info-circle me-1"></i>Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">
+                            <i class="fas fa-cogs me-1"></i>Serviços
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success ms-2" href="https://wa.me/5511999999999?text=Olá! Preciso de um guincho." target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+    <!-- Hero Section -->
+        <section class="hero-section bg-dark text-white position-relative">
+            <div class="container">
+                <div class="row min-vh-50 align-items-center py-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold mb-4" data-sr-id="services-hero-title">
+                            Nossos <span class="text-primary">Serviços</span>
+                        </h1>
+                        <p class="lead" data-sr-id="services-hero-subtitle">
+                            Soluções completas em guincho, transporte e assistência veicular 24 horas por dia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Services -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Guincho Services -->
+                <div class="service-section mb-5">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6">
+                            <div class="service-content" data-sr-id="guincho-content">
+                                <h2 class="display-6 fw-bold mb-4">
+                                    <i class="fas fa-truck text-primary me-3"></i>
+                                    Serviços de Guincho
+                                </h2>
+                                <p class="lead text-muted mb-4">
+                                    Atendimento 24 horas para remoção e transporte de veículos em situações de emergência, 
+                                    pane ou acidente.
+                                </p>
+                                
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-car text-success me-2"></i>
+                                            <span>Guincho para carros</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-motorcycle text-success me-2"></i>
+                                            <span>Guincho para motos</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-shipping-fast text-success me-2"></i>
+                                            <span>Guincho pesado</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-clock text-success me-2"></i>
+                                            <span>Atendimento 24h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <a href="https://wa.me/5511999999999?text=Preciso de guincho para meu veículo" 
+                                    target="_blank" class="btn btn-success btn-lg">
+                                        <i class="fab fa-whatsapp me-2"></i>Solicitar Guincho
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-center" data-sr-id="guincho-icon">
+                                <i class="fas fa-truck display-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transport Services -->
+                <div class="service-section mb-5 bg-body-secondary rounded p-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="service-content" data-sr-id="transport-content">
+                                <h2 class="display-6 fw-bold mb-4">
+                                    <i class="fas fa-road text-success me-3"></i>
+                                    Transporte Rodoviário
+                                </h2>
+                                <p class="lead text-muted mb-4">
+                                    Transporte seguro de veículos entre cidades e estados, 
+                                    utilizando cegonhas e pranchas especializadas.
+                                </p>
+                                
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-map-marked-alt text-success me-2"></i>
+                                            <span>Transporte interestadual</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-shield-alt text-success me-2"></i>
+                                            <span>Seguro total</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-boxes text-success me-2"></i>
+                                            <span>Veículos novos e usados</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="feature-item">
+                                            <i class="fas fa-tracking text-success me-2"></i>
+                                            <span>Rastreamento online</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-calculator me-2"></i>Solicitar Orçamento
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="text-center" data-sr-id="transport-icon">
+                                <i class="fas fa-road display-1 text-success"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insurance Services -->
+                <div class="service-section rounded p-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="service-content" data-sr-id="insurance-content">
+                                <h2 class="display-6 fw-bold mb-4">
+                                    <i class="fas fa-file-contract text-warning me-3"></i>
+                                    Atendimento a Seguros
+                                </h2>
+                                <p class="lead text-muted mb-4">
+                                    Credenciados pelas principais seguradoras do mercado, 
+                                    oferecemos atendimento ágil e documentação completa.
+                                </p>
+                                
+                                <div class="insurance-logos mb-4">
+                                    <h6 class="fw-bold mb-3">Seguradoras Credenciadas:</h6>
+                                    <div class="row g-2">
+                                        <div class="col-md-4">
+                                            <div class="insurance-item p-2 border rounded text-center">
+                                                <i class="fas fa-shield-alt text-primary me-2"></i>
+                                                <small>Porto Seguro</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="insurance-item p-2 border rounded text-center">
+                                                <i class="fas fa-shield-alt text-danger me-2"></i>
+                                                <small>Bradesco Seguros</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="insurance-item p-2 border rounded text-center">
+                                                <i class="fas fa-shield-alt text-secondary me-2"></i>
+                                                <small>Outras</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="text-center" data-sr-id="insurance-icon">
+                                <i class="fas fa-file-contract display-1 text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="py-5 bg-body-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="display-6 fw-bold mb-4" data-sr-id="pricing-title">
+                            Tabela de Preços
+                        </h2>
+                        <p class="lead text-muted" data-sr-id="pricing-subtitle">
+                            Preços competitivos e transparentes. Consulte valores específicos para sua região.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm" data-sr-id="price-1">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-car fs-1 text-primary mb-3"></i>
+                                <h5 class="fw-bold mb-3">Guincho Leve</h5>
+                                <div class="price-display mb-3">
+                                    <span class="h4 fw-bold">A partir de</span>
+                                    <div class="h3 text-primary fw-bold">R$ 80,00</div>
+                                </div>
+                                <ul class="list-unstyled text-muted small">
+                                    <li>Carros de passeio</li>
+                                    <li>Motos e ciclomotores</li>
+                                    <li>Atendimento local</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm" data-sr-id="price-2">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-truck fs-1 text-success mb-3"></i>
+                                <h5 class="fw-bold mb-3">Guincho Pesado</h5>
+                                <div class="price-display mb-3">
+                                    <span class="h4 fw-bold">A partir de</span>
+                                    <div class="h3 text-success fw-bold">R$ 150,00</div>
+                                </div>
+                                <ul class="list-unstyled text-muted small">
+                                    <li>Veículos comerciais</li>
+                                    <li>Caminhões pequenos</li>
+                                    <li>Situações complexas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm" data-sr-id="price-4">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-route fs-1 text-warning mb-3"></i>
+                                <h5 class="fw-bold mb-3">Transporte</h5>
+                                <div class="price-display mb-3">
+                                    <span class="h4 fw-bold">Sob</span>
+                                    <div class="h3 text-warning fw-bold">Consulta</div>
+                                </div>
+                                <ul class="list-unstyled text-muted small">
+                                    <li>Transporte interestadual</li>
+                                    <li>Múltiplos veículos</li>
+                                    <li>Distâncias longas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <p class="text-muted mb-3">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Preços podem variar conforme distância, horário e complexidade do serviço.
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg" data-sr-id="pricing-cta">
+                        <i class="fas fa-calculator me-2"></i>Solicitar Orçamento Personalizado
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Service Areas -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="display-6 fw-bold mb-4" data-sr-id="areas-title">
+                            Áreas de Atendimento
+                        </h2>
+                        <p class="lead text-muted" data-sr-id="areas-subtitle">
+                            Cobrimos toda a região serrana.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-lg-6">
+                            <div class="area-card p-4 border rounded" data-sr-id="area-metro">
+                                <h5 class="fw-bold mb-3">
+                                    <i class="fas fa-city text-primary me-2"></i>
+                                    Região Serrana
+                                </h5>
+                                <div class="row g-2">
+                                    <div class="col-md-12">
+                                        <ul class="list-unstyled text-muted small">
+                                            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Santa Maria de Jetibá</li>
+                                            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Santa Teresa</li>
+                                            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Santa Leopoldina</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency CTA -->
+        <section class="py-5 bg-danger text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div data-sr-id="emergency-cta">
+                            <h3 class="fw-bold mb-3">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                Emergência? Precisa de Atendimento Imediato?
+                            </h3>
+                            <p class="lead mb-0">
+                                Nossa central opera 24 horas por dia. Entre em contato pelo WhatsApp 
+                                ou telefone para atendimento emergencial.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <div class="d-flex gap-2 justify-content-end flex-wrap">
+                            <a href="tel:+5511999999999" class="btn btn-light btn-lg" data-sr-id="emergency-phone">
+                                <i class="fas fa-phone me-2"></i>Ligar Agora
+                            </a>
+                            <a href="https://wa.me/5511999999999?text=EMERGÊNCIA! Preciso de guincho urgente." 
+                            target="_blank" class="btn btn-success btn-lg" data-sr-id="emergency-whatsapp">
+                                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-truck me-2"></i>JLS Transporte e Guincho
+                    </h5>
+                    <p class="text-muted">
+                        Serviços de guincho 24 horas, transporte de veículos. 
+                        Sua segurança é nossa prioridade.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="text-success fs-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-primary fs-4">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-info fs-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Links Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-muted text-decoration-none">Início</a></li>
+                        <li><a href="/about.html" class="text-muted text-decoration-none">Sobre</a></li>
+                        <li><a href="/services.html" class="text-muted text-decoration-none">Serviços</a></li>
+                        <li><a href="/contact.html" class="text-muted text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Nossos Serviços</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fas fa-check me-2 text-success"></i>Guincho 24h</li>
+                        <li><i class="fas fa-check me-2 text-success"></i>Transporte de Veículos</li>
+                        <li><i class="fas fa-check me-2 text-success"></i>Atendimento a Seguradoras</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fas fa-phone me-2"></i>(11) 99999-9999</li>
+                        <li><i class="fas fa-envelope me-2"></i>contato@jlstransporte.com.br</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Santa Maria de Jetibá - ES</li>
+                        <li><i class="fas fa-clock me-2"></i>24 horas por dia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">
+                        &copy; 2025 JLS Transporte e Guincho. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-success btn-sm">
+                        <i class="fab fa-whatsapp me-1"></i>Emergência 24h
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./static/js/main.js"></script>
+</body>
+</html>
