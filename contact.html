@@ -27,47 +27,7 @@
         </div>
     </div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="./index.html">
-                <i class="fas fa-truck me-2"></i>JLS Transporte e Guincho
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">
-                            <i class="fas fa-home me-1"></i>Início
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">
-                            <i class="fas fa-info-circle me-1"></i>Sobre
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">
-                            <i class="fas fa-cogs me-1"></i>Serviços
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">
-                            <i class="fas fa-envelope me-1"></i>Contato
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-success ms-2" href="https://wa.me/5511999999999?text=Olá! Preciso de um guincho." target="_blank">
-                            <i class="fab fa-whatsapp me-1"></i>WhatsApp
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Main Content -->
     <main>
@@ -98,8 +58,8 @@
                                 <i class="fas fa-phone fs-1 text-primary"></i>
                             </div>
                             <h5 class="fw-bold mb-3">Telefone</h5>
-                            <p class="text-muted mb-3">(99) 99999-9999</p>
-                            <a href="tel:+5511999999999" class="btn btn-outline-primary btn-sm">
+                            <p class="text-muted mb-3">(27) 99795-3586</p>
+                            <a href="tel:+5527997953586" class="btn btn-outline-primary btn-sm">
                                 <i class="fas fa-phone me-1"></i>Ligar Agora
                             </a>
                         </div>
@@ -112,7 +72,7 @@
                             </div>
                             <h5 class="fw-bold mb-3">WhatsApp</h5>
                             <p class="text-muted mb-3">Atendimento 24h</p>
-                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento." 
+                            <a href="https://wa.me/5527997953586?text=Olá! Gostaria de solicitar um orçamento." 
                             target="_blank" class="btn btn-success btn-sm">
                                 <i class="fab fa-whatsapp me-1"></i>Conversar
                             </a>
@@ -151,7 +111,7 @@
         <!-- Contact Form Section -->
         <section class="py-5 bg-body-secondary">
             <div class="container">
-                <div class="row">
+                <div class="row" id="contact" >
                     <div class="col-lg-8 mx-auto">
                         <div class="card border-0 shadow-lg">
                             <div class="card-body p-5">
@@ -163,7 +123,7 @@
                                     </p>
                                 </div>
                                 
-                                <form method="POST" action="{{ url_for('contact') }}" class="contact-form" data-sr-id="contact-form">
+                                <form method="POST" action="#" class="contact-form" data-sr-id="contact-form">
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <label for="name" class="form-label fw-bold">Nome Completo *</label>
@@ -188,10 +148,8 @@
                                             <select class="form-select form-select-lg" id="service_type" name="service_type">
                                                 <option value="">Selecione um serviço</option>
                                                 <option value="guincho_leve">Guincho Leve (Carros/Motos)</option>
-                                                <option value="guincho_pesado">Guincho Pesado (Caminhões)</option>
                                                 <option value="transporte">Transporte Rodoviário</option>
-                                                <option value="assistencia">Assistência Técnica</option>
-                                                <option value="seguro">Atendimento a Seguros</option>
+                                                <option value="seguro">Atendimento a Seguradoras</option>
                                                 <option value="orcamento">Orçamento Geral</option>
                                                 <option value="outros">Outros</option>
                                             </select>
@@ -249,7 +207,7 @@
                                     <i class="fas fa-exclamation-triangle fs-1 text-danger mb-3"></i>
                                     <h5 class="fw-bold mb-3">Emergência</h5>
                                     <p class="text-muted mb-3">Acidente, pane ou situação de risco</p>
-                                    <a href="https://wa.me/5511999999999?text=EMERGÊNCIA! Preciso de guincho urgente." 
+                                    <a href="https://wa.me/5527997953586?text=EMERGÊNCIA! Preciso de guincho urgente." 
                                     target="_blank" class="btn btn-danger">
                                         <i class="fab fa-whatsapp me-2"></i>WhatsApp Emergência
                                     </a>
@@ -261,7 +219,7 @@
                                     <i class="fas fa-calculator fs-1 text-primary mb-3"></i>
                                     <h5 class="fw-bold mb-3">Orçamento</h5>
                                     <p class="text-muted mb-3">Solicite cotação de preços</p>
-                                    <a href="https://wa.me/5511999999999?text=Gostaria de solicitar um orçamento para transporte/guincho." 
+                                    <a href="https://wa.me/5527997953586?text=Gostaria de solicitar um orçamento para transporte/guincho." 
                                     target="_blank" class="btn btn-primary">
                                         <i class="fab fa-whatsapp me-2"></i>Solicitar Orçamento
                                     </a>
@@ -273,7 +231,7 @@
                                     <i class="fas fa-calendar-alt fs-1 text-success mb-3"></i>
                                     <h5 class="fw-bold mb-3">Agendamento</h5>
                                     <p class="text-muted mb-3">Agende seu serviço</p>
-                                    <a href="https://wa.me/5511999999999?text=Gostaria de agendar um serviço de guincho/transporte." 
+                                    <a href="https://wa.me/5527997953586?text=Gostaria de agendar um serviço de guincho/transporte." 
                                     target="_blank" class="btn btn-success">
                                         <i class="fab fa-whatsapp me-2"></i>Agendar Serviço
                                     </a>
@@ -344,83 +302,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- FAQ Section -->
-        <section class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="text-center mb-5">
-                            <h2 class="display-6 fw-bold mb-4" data-sr-id="faq-title">
-                                Perguntas Frequentes
-                            </h2>
-                            <p class="lead text-muted" data-sr-id="faq-subtitle">
-                                Tire suas dúvidas antes de entrar em contato conosco.
-                            </p>
-                        </div>
-                        
-                        <div class="accordion" id="faqAccordion" data-sr-id="faq-accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                        Qual o tempo médio de chegada do guincho?
-                                    </button>
-                                </h2>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Nosso tempo médio de chegada é de 30 minutos para a região metropolitana de São Paulo. 
-                                        Em casos de emergência em rodovias, pode variar entre 15 a 45 minutos dependendo do tráfego e localização.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        Atendem seguros de veículos?
-                                    </button>
-                                </h2>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Sim! Somos credenciados pelas principais seguradoras: Porto Seguro, Bradesco Seguros, 
-                                        SulAmérica, Zurich, Mapfre e outras. Temos processo ágil e documentação completa.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                        Fazem transporte entre cidades?
-                                    </button>
-                                </h2>
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Sim, realizamos transporte rodoviário interestadual com cegonhas e pranchas especializadas. 
-                                        Oferecemos seguro total e rastreamento online durante o transporte.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                        Quais formas de pagamento aceitam?
-                                    </button>
-                                </h2>
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Aceitamos dinheiro, cartão de débito e crédito (na máquina), PIX e também 
-                                        faturamento para empresas cadastradas. Para seguros, o pagamento é direto com a seguradora.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         
         <script>
         // Form validation and enhancement
@@ -464,81 +345,23 @@
     </main>
 
         <!-- Footer -->
-    <footer class="bg-dark text-light py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="fas fa-truck me-2"></i>JLS Transporte e Guincho
-                    </h5>
-                    <p class="text-muted">
-                        Serviços de guincho 24 horas, transporte de veículos. 
-                        Sua segurança é nossa prioridade.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="https://wa.me/5511999999999" target="_blank" class="text-success fs-4">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="#" class="text-primary fs-4">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="text-info fs-4">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 mb-4">
-                    <h6 class="fw-bold mb-3">Links Rápidos</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="/index.html" class="text-muted text-decoration-none">Início</a></li>
-                        <li><a href="/about.html" class="text-muted text-decoration-none">Sobre</a></li>
-                        <li><a href="/services.html" class="text-muted text-decoration-none">Serviços</a></li>
-                        <li><a href="/contact.html" class="text-muted text-decoration-none">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 mb-4">
-                    <h6 class="fw-bold mb-3">Nossos Serviços</h6>
-                    <ul class="list-unstyled text-muted">
-                        <li><i class="fas fa-check me-2 text-success"></i>Guincho 24h</li>
-                        <li><i class="fas fa-check me-2 text-success"></i>Transporte de Veículos</li>
-                        <li><i class="fas fa-check me-2 text-success"></i>Atendimento a Seguradoras</li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 mb-4">
-                    <h6 class="fw-bold mb-3">Contato</h6>
-                    <ul class="list-unstyled text-muted">
-                        <li><i class="fas fa-phone me-2"></i>(11) 99999-9999</li>
-                        <li><i class="fas fa-envelope me-2"></i>contato@jlstransporte.com.br</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i>Santa Maria de Jetibá - ES</li>
-                        <li><i class="fas fa-clock me-2"></i>24 horas por dia</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <hr class="my-4">
-            
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="text-muted mb-0">
-                        &copy; 2025 JLS Transporte e Guincho. Todos os direitos reservados.
-                    </p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-success btn-sm">
-                        <i class="fab fa-whatsapp me-1"></i>Emergência 24h
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JS -->
     <script src="./static/js/main.js"></script>
+    <script>
+        async function loadTemplate(id, url) {
+            const res = await fetch(url);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+
+        loadTemplate("header", "./src/header.html");
+        loadTemplate("footer", "./src/footer.html");
+
+     </script>
 </body>
 </html>
