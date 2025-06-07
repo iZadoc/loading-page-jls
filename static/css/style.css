@@ -273,6 +273,7 @@
     .hours-card {
         margin-bottom: 1rem;
     }
+
 }
 
 /* Animation Classes */
@@ -405,9 +406,12 @@
     width: auto;
 }
 
-.gradient-overlay {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent), url('imag/foto01.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#header{
+    height: 80px;
+    width: 100%;
+}
+
+.img-index{
+    width: auto;
+    height: 30rem;
 }
